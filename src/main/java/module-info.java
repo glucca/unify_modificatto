@@ -4,7 +4,6 @@ module it.univaq.disim.oop.unify {
 	requires javafx.graphics;
 	requires javafx.base;
 	requires java.desktop;
-	requires com.google.gson;
 	requires javafx.media;
 	
 
