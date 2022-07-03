@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.LayoutController">
+   <top>
+      <HBox prefHeight="42.0" prefWidth="395.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/1724420-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="70.0" prefWidth="538.0" visible="false" />
+            <ImageView fitHeight="35.0" fitWidth="24.0" onMouseClicked="#logoutAction" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets top="40.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../img/pngfind.com-logout-icon-png-5857042.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox fx:id="menuBar" prefHeight="485.0" prefWidth="145.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2F2FA2;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

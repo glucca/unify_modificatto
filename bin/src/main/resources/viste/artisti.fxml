@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.ArtistiController">
+   <children>
+      <TableView fx:id="artistiTabella" layoutX="14.0" layoutY="54.0" prefHeight="340.0" prefWidth="575.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nome" prefWidth="128.800048828125" text="Nome" />
+            <TableColumn fx:id="biografia" prefWidth="110.39996337890625" text="Biografia" />
+            <TableColumn fx:id="discografia" prefWidth="122.39996337890625" text="Discografia" />
+            <TableColumn fx:id="foto" prefWidth="122.39996337890625" text="Foto" />
+            <TableColumn fx:id="dettaglio" prefWidth="122.39996337890625" text="dettaglio" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="14.0" text="Artisti">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="740.0" style="-fx-background-color: #2F2FA2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.LoginController">
+   <children>
+      <ImageView fitHeight="117.0" fitWidth="326.0" layoutX="207.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/1724420-removebg-preview.png" />
+         </image></ImageView>
+      <TextField fx:id="username" layoutX="282.0" layoutY="236.0" prefHeight="25.0" prefWidth="176.0" />
+      <PasswordField fx:id="password" layoutX="282.0" layoutY="300.0" prefHeight="25.0" prefWidth="176.0" />
+      <Button fx:id="loginButton" layoutX="345.0" layoutY="362.0" mnemonicParsing="false" onAction="#loginAction" style="-fx-background-color: #2F2FA2; -fx-border-color: #FE634A; -fx-text-fill: #FE634A; -fx-border-width: 1.5;" text="Login" />
+      <Button fx:id="registrazioneBottone" layoutX="338.0" layoutY="415.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: #2F2FA2; -fx-border-color: #FE634A; -fx-text-fill: #FE634A; -fx-border-width: 1.5;" text="Registrati" />
+      <Label layoutX="282.0" layoutY="162.0" text="Benvenuto" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginErrorLabel" layoutX="207.0" layoutY="481.0" text="Errore, username e/o password errati" textFill="#f64c72" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
